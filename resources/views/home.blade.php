@@ -22,7 +22,7 @@
             </div>
 
             <div class="row-subheader">
-                <h4>Klasifikasi kategori artikel berbahasa Indonesia berdasarkan judul</h4>
+                <h4>Klasifikasi kategori artikel berbahasa Indonesia berdasarkan judul artikel</h4>
             </div>
             
 
@@ -38,7 +38,9 @@
             </form>
 
         </div>
-        
+        <br>
+        <br>
+        <br>
         <div class="mt-5">
             <table class="table">
                 <thead>
@@ -83,7 +85,7 @@
 
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700|Roboto+Condensed');
 h2{
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
@@ -96,7 +98,7 @@ h4{
     color:#FFFFFF;
 }
 body{
-    background: url({{ URL::asset('image/nikita-kachanovsky-445394-unsplash.jpg') }}) no-repeat center center fixed;
+    background: url('nikita-kachanovsky-445394-unsplash.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -105,6 +107,8 @@ body{
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    float: left;
+    outline: none;
 }
 
 .row-heading{
@@ -114,7 +118,7 @@ body{
 }
 
 .row-subheader{
-    margin-left:20%;
+    margin-left:18%;
     margin-bottom: 5%;
 }
 
@@ -123,17 +127,32 @@ body{
 }
 
 .btn-primary {
-    padding: 10px 30px;
+    padding: 11px 30px;
     font-size: 16px;
+    border: none;
+    display: inline-block;
+    margin-right: 3px;
 }
 
 th{
     color:#FFFFFF;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .predict-view{
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+}
+.form-group{
+    width: 100%;
+    position: relative
+}
+
+.btn{
+    position: absolute;
+    right: 130px;
+    bottom: 275px;
 }
 </style>
 
