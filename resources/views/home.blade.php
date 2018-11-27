@@ -98,7 +98,7 @@ h4{
     color:#FFFFFF;
 }
 body{
-    background: url('nikita-kachanovsky-445394-unsplash.jpg') no-repeat center center fixed;
+    background: url({{ URL::asset('image/nikita-kachanovsky-445394-unsplash.jpg') }}) no-repeat center center fixed;
     background-size: cover;
 }
 
